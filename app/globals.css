@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global typography and resets */
+body {
+  @apply font-sans;
+}
