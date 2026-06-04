@@ -6,7 +6,7 @@ import { ghlBookingUrl } from '../../components/data';
 
 export const metadata = {
   title: 'Pricing | Essential Solutions',
-  description: 'Simple, transparent pricing for AI-powered business automation. Start at $179/month.',
+  description: 'Simple transparent pricing starting at $179/month. Review automation, AI call handling, and full business systems.',
 };
 
 export default function Pricing() {
@@ -17,13 +17,14 @@ export default function Pricing() {
         <section className="section-dark page-hero-short">
           <span className="eyebrow">Pricing</span>
           <h1>Start small. Scale when it makes sense.</h1>
-          <p>Every plan includes a one-time setup fee that covers full configuration and onboarding — so the system actually works from day one, not someday.</p>
+          <p>Every plan includes a one-time setup fee covering full configuration and onboarding — so the system works from day one.</p>
         </section>
         <PricingSection bookingUrl={ghlBookingUrl} />
-        <section className="section feature-compare-section">
+
+        <section className="section section-cream feature-compare-section">
           <div className="section-heading">
-            <span className="eyebrow dark">Compare Plans</span>
-            <h2>What is included at each tier.</h2>
+            <span className="eyebrow dark">Compare</span>
+            <h2>What's included at each tier.</h2>
           </div>
           <div className="compare-table-wrap">
             <table className="compare-table">
@@ -53,7 +54,6 @@ export default function Pricing() {
                   ['Phone numbers included', '1', '2', '4'],
                   ['Outbound AI campaigns', false, false, true],
                   ['Content AI & social planner', false, false, true],
-                  ['Funnel & landing page builder', false, false, true],
                   ['Priority support', false, false, true],
                   ['User seats', '1', 'Multiple', 'Unlimited'],
                   ['One-time setup fee', '$199', '$499', '$799'],
