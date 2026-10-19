@@ -1,0 +1,20 @@
+ESSENTIAL SOLUTIONS — COMPLETE WEBSITE UPDATE
+
+Changes:
+- New homepage hero: "Never miss a moment. Never miss an opportunity."
+- Blue "moment" and first period, red "opportunity", yellow final period.
+- Removes the two industry-specific hero callouts; broadens the introductory description.
+- Connect: $299 monthly, $3,289 annual, $199 one-time setup.
+- Growth: $599 monthly, $6,589 annual, $399 one-time setup.
+- Growth remains the featured plan.
+- Routes each signup plan/billing selection to its matching HighLevel payment link AFTER successfully sending lead data to the existing webhook.
+- Keeps existing pages, ribbon vectors, logo, and webhook logic.
+
+DEPLOY:
+1. Upload/replace the contents of this package to the ROOT of the existing GitHub repository ajpolynice-stack/startessential-website, preserving folder paths.
+2. Do NOT replace your existing Vercel environment variables or GoHighLevel webhook URL. The existing GHL_LEAD_WEBHOOK_URL is still required.
+3. Ensure Vercel production deployment completes successfully, then visit startessential.com.
+4. Verify desktop and mobile hero, pricing page, and all four checkout redirects using a test lead (do not submit a real payment).
+5. In Stripe/HighLevel, verify a setup fee is charged just once and payment confirmation drives onboarding (signup alone does not mean paid).
+
+IMPORTANT: GitHub connector write permission was denied in this session, so these are prepared files; the live repository has NOT been updated automatically.

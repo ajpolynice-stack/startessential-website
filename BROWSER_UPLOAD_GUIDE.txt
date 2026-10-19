@@ -1,0 +1,50 @@
+ESSENTIAL SOLUTIONS — HD RIBBONS, HEADER, GROWTH PLAN & HIGHLEVEL CHAT
+
+1. Download and extract the latest Essential Solutions website ZIP.
+2. Go to https://github.com/ajpolynice-stack/startessential-website and select main.
+3. Upload the extracted project CONTENTS into the repository root (not the ZIP and not an extra nested folder).
+4. Commit to main; let Vercel build the new version.
+
+MAIN FILES CHANGED:
+app/globals.css
+app/layout.tsx
+app/get-started/page.tsx
+components/BrandLockup.tsx (NEW)
+components/HighLevelChatWidget.tsx (NEW)
+components/HomePage.tsx
+components/PricingInteractive.tsx
+components/SiteHeader.tsx
+components/SiteFooter.tsx
+public/images/ribbon-left.svg (NEW)
+public/images/ribbon-right.svg (NEW)
+scripts/verify-project.mjs
+README.md
+
+The OLD ribbon-left.png and ribbon-right.png files are unused. You may delete them
+later through GitHub, but they will not display after the code is updated.
+
+The new SVG ribbons look sharp at any monitor size. There is no text embedded
+inside the right ribbon. Growth is the highlighted and preselected default plan.
+
+CHAT WIDGET — NOT YET LIVE:
+In your GoHighLevel sub-account: Sites > Chat Widget > configure and Get Code.
+In Vercel Project > Settings > Environment Variables set:
+NEXT_PUBLIC_GHL_CHAT_WIDGET_ID=[your actual widget ID]
+NEXT_PUBLIC_GHL_CHAT_ENABLED=true
+Redeploy. Until these variables are set, nothing shows at bottom right.
+
+TEST:
+Homepage ribbons and top-left logo on desktop and phone; /pricing Growth card;
+/get-started default Growth and manual package dropdown; all page navigation;
+chat appears bottom-right ONLY after being enabled; one test lead submission.
+
+There are no .env.example or .gitignore files in this package.
+
+
+OCTOBER UPDATE — PLAN VALUES AND BUSINESS TYPE SELECTOR
+
+- The homepage and Pricing page have 10 inclusions per plan. Essential Growth remains Most Popular.
+- The Get Started form offers 110 specific industry choices in 10 labeled groups and an Other description.
+- This version updates source files only; nothing is deployed until you commit to your repository.
+- To avoid an accidental nested project, upload the CONTENTS of the extracted ZIP to the root of the existing GitHub repository.
+- After the automatic Vercel deployment, inspect the home Pricing section, /pricing, and /get-started routes and submit a controlled test lead to verify your GoHighLevel webhook is configured.
